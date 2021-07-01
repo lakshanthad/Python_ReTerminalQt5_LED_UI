@@ -5,7 +5,7 @@ ApplicationWindow {
     width: 1280
     height: 720
     visible: true
-    // visibility: "FullScreen"
+    visibility: "FullScreen"
 
     property var iniITEM: "LedGui.qml"
 
