@@ -43,7 +43,7 @@ sudo make install
 - **Step 1.** Clone this repo
 
 ```sh
-https://github.com/lakshanthad/Python_ReTerminalQt5_LED_UI
+git clone https://github.com/lakshanthad/Python_ReTerminalQt5_LED_UI
 ```
 
 - **Step 2.** Navigate to the **Python_ReTerminalQt5_LED_UI** directory
