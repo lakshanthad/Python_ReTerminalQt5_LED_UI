@@ -10,33 +10,13 @@ For a step-by-step guide on building your own UI using Qt for Python on the reTe
 
 ## Install 
 
-First you need to install the necessary libraries. However, if you are using our [compiled Raspberry Pi OS](https://wiki.seeedstudio.com/reTerminal/#q1-how-can-i-flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal) or using the Raspberry Pi OS which is shipped with the reTerminal, it already includes these libraries and therefore you can skip this section and move on to the **Usage** section
+First you need to install the necessary libraries. However, if you are using our [compiled Raspberry Pi OS](https://wiki.seeedstudio.com/reTerminal-FAQ/#q2-how-can-i-flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal) or using the Raspberry Pi OS which is shipped with the reTerminal, it already includes these libraries and therefore you can skip this section and move on to the **Usage** section
 
-- **Step 1.** Access reTerminal using the **onboard LCD, external display or SSH** as explained [here](https://wiki.seeedstudio.com/reTerminal/#log-in-to-raspberry-pi-os-ubuntu-os-or-other-os-using-ssh-over-wi-fi-ethernet) and type the following on a terminal window
-
-```sh
-sudo apt install qml-module-qtquick-shapes python3-pyside2.qtqml python3-pyside2.qtcore python3-pyside2.qtnetwork python3-pyside2.qtgui python3-pyside2.qtwidgets python3-pyside2.qtquick qtquickcontrols2-5-dev qml-module-qtcharts qml-module-qtquick-controls qml-module-qtquick-controls2
-```
-
-- **Step 2.** Install compile tools to install the **QtQuick.Studio** component manually
+Access reTerminal using the **onboard LCD, external display or SSH** as explained [here](https://wiki.seeedstudio.com/reTerminal/#log-in-to-raspberry-pi-os-ubuntu-os-or-other-os-using-ssh-over-wi-fi-ethernet) and type the following on a terminal window to install the necessary packages
 
 ```sh
-sudo apt install qmake qt5-defaults 
+sudo apt install python3-pyside2.qtqml python3-pyside2.qtcore python3-pyside2.qtnetwork python3-pyside2.qtgui python3-pyside2.qtwidgets python3-pyside2.qtquick qml-module-qtquick-controls2 qml-module-qtquick-controls
 ```
-
-**Note:** We have to install QtQuick.Studio manually because default Debian and Ubuntu OS don't have this module 
-
-- **Step 3.** Install the **QtQuick.Studio** module
-
-```sh
-git clone git://github.com/Pillar1989/qtquickdesigner-components.git
-cd qtquickdesigner-components
-qmake 
-make 
-sudo make install 
-```
-
-**Note:** Because the latest QtQuick.Studio module cannot work on the current Raspberry Pi OS, we had port it to Debian GNU/Linux 10 (buster)
 
 ## Usage
 
